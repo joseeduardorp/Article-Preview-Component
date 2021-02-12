@@ -1,0 +1,257 @@
+/* Global ======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Mobile ====================================== */
+/* Main ======================================== */
+main {
+    width: 335px;
+    height: 530px;
+    background: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Background Image =========================== */
+.image {
+    width: 100%;
+    height: 42%;
+    background-image: url("./images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+/* Description container ===================== */
+.description-container {
+    margin: 2.2rem;
+    margin-top: 2.5rem;
+}
+
+.description-container h1 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+/* Perfil container ========================== */
+.perfil-container {
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil img {
+    margin-right: 1rem;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.infos h2 {
+    color: hsl(217, 19%, 35%);
+}
+
+/* Paragraphs ================================ */
+p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.description-container p {
+    color: hsl(214, 17%, 51%);
+}
+
+.perfil-container p {
+    color: hsl(212, 23%, 69%);
+}
+
+/* Share button ============================= */
+.share button {
+    padding: .5rem;
+    background: hsl(210, 46%, 95%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.share button:hover {
+    opacity: .8;
+    transition-duration: .4s;
+}
+
+/* Modal =================================== */
+.modal-container {
+    width: 100%;
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.modal {
+    padding: 1.2rem 2rem;
+    width: 100%;
+    background: hsl(217, 19%, 35%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.social-medias {
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+.social-medias h3 {
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color:hsl(212, 23%, 69%);
+}
+
+.social-medias a {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    margin: 0 .7rem;
+}
+
+/* Arrow =================================== */
+.arrow-down {
+    display: none;
+}
+
+/* Footer ================================== */
+footer {
+    padding: .5rem;
+    position: absolute; 
+    bottom: 0;
+    opacity: .7;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+/* Desktop =============================== */
+@media (min-width: 800px) {
+    /* Main =============================== */
+    main {
+        width: 770px;
+        height: 300px;
+        flex-direction: row;
+    }
+    
+    /* Background Image =========================== */
+    .image {
+        width: 550px;
+        height: 100%;
+    }
+
+	/* Section =========================== */
+    section {
+        padding: 3rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        position: static;
+    }
+
+    /* Description container ===================== */
+    .description-container {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .description-container h1 {
+        font-size: 1.7rem;
+    }
+
+    /* Perfil container ========================== */
+    .perfil-container {
+        padding: 0;
+    }
+
+    /* Share button ============================= */
+    #close {
+        display: none;
+    }
+
+    /* Modal =================================== */
+    .modal-container {
+        width: auto;
+        border-radius: 1rem;
+        bottom: 350px;
+        right: 270px;
+        overflow: hidden;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal {
+        padding: 2rem;
+    }
+    
+    .social-medias {
+        padding: 0;
+    }
+
+    /* Arrow =================================== */
+    .arrow-down {
+        width: 0;
+        height: 0;
+
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid hsl(217, 19%, 35%);
+
+        position: absolute;
+        bottom: 337px;
+        right: 373px;
+    }
+}

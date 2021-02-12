@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <div class="image"></div>
+
+      <section>
+        <div class="description-container">
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to furniture in your home
+          </h1>
+  
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
+            got some simple tips to help you make any room feel complete.
+          </p>
+        </div>
+  
+        <div class="perfil-container">
+          <div class="perfil">
+            <img src="./images/avatar-michelle.jpg" alt="Michelle photo">
+
+            <div class="infos">
+              <h2>Michelle Appleton</h2>
+              <p>28 Jun 2020</p>
+            </div>
+          </div>
+          
+          <div class="share">
+            <button id="open" onclick="active()"><img src="./images/icon-share.svg" alt="Share button"></button>
+          </div>
+        </div>
+
+        <div class="modal-container">
+          <div class="modal">
+            <div class="social-medias">
+              <h3>SHARE</h3>
+              <a href="https://www.facebook.com" target="_blank"><img src="./images/icon-facebook.svg" alt="Facebook"></a>
+              <a href="https://www.twitter.com" target="_blank"><img src="./images/icon-twitter.svg" alt="Twitter"></a>
+              <a href="https://www.pinterest.com" target="_blank"><img src="./images/icon-pinterest.svg" alt="Pinterest"></a>
+            </div>
+
+            <div class="share">
+              <button id="close" onclick="active()"><img src="./images/icon-share.svg" alt="Share button"></button>
+            </div>
+          </div>
+            
+        </div>
+
+        <span class="arrow-down"></span>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">José Eduardo</a>.
+      </div>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
